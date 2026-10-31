@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I'm So Sorry, My Love ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <!-- Background Floating Hearts -->
+  <div class="heart-bg" id="heartBg"></div>
+
+  <div class="container">
+    
+    <!-- Header -->
+    <header class="header">
+      <span class="badge">A Heartfelt Apology</span>
+      <h1>I'm Truly Sorry, My Love ❤️</h1>
+      <p>You mean the world to me, and I never meant to cause you pain or doubt.</p>
+    </header>
+
+    <!-- Audio Player Section -->
+    <section class="card audio-card">
+      <h2>🎵 A Song For You</h2>
+      <p>Press play to listen while you read this page</p>
+      <audio id="audioPlayer" controls loop>
+        <source src="audio/background-music.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="card">
+      <h2>📸 Our Special Moments</h2>
+      <p class="subtitle">Reminders of how much you mean to me</p>
+      
+      <div class="photo-grid">
+        <div class="photo-card">
+          <img src="images/photo1.jpg" alt="Memory 1" />
+          <div class="photo-caption">My Favorite Smile ❤️</div>
+        </div>
+        <div class="photo-card">
+          <img src="images/photo2.jpg" alt="Memory 2" />
+          <div class="photo-caption">Best Times With You ✨</div>
+        </div>
+        <div class="photo-card">
+          <img src="images/photo3.jpg" alt="Memory 3" />
+          <div class="photo-caption">Forever My Favorite Person 💕</div>
+        </div>
+        <div class="photo-card">
+          <img src="images/photo4.jpg" alt="Memory 4" />
+          <div class="photo-caption">Just You & Me 🌹</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Truth & Explanation Timeline -->
+    <section class="card">
+      <h2>🕊️ What You Need To Know</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3>They Were Just Casual Contacts</h3>
+            <p>The Snapchat adds were strictly friends/acquaintances. There was never anything romantic or flirty behind it.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3>You Are My Only Priority</h3>
+            <p>Seeing you hurt made me realize how bad it looked. Your trust and peace of mind matter more than anyone else.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3>Everything Is Blocked</h3>
+            <p>I have completely removed and blocked those contacts. I want zero distractions or misunderstandings between us.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Love Letter Section -->
+    <section class="card letter-card">
+      <h2>💌 From My Heart</h2>
+      <p class="letter-body">
+        "I hate knowing that I caused you pain or made you question my loyalty. You are the only person I care about, and my intention was never to make you feel insecure or hurt. I promise to be more mindful, transparent, and respectful of your feelings always. Please give me the chance to make it up to you."
+      </p>
+    </section>
+
+    <!-- Interactive Forgiveness Section -->
+    <section class="card action-card">
+      <h2>Will You Forgive Me? 🥺</h2>
+      <div class="button-group">
+        <button id="yesBtn" class="btn btn-yes">Yes, I Forgive You ❤️</button>
+        <button id="noBtn" class="btn btn-no">Still Mad 😤</button>
+      </div>
+      <div id="responseMessage" class="hidden-message"></div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
